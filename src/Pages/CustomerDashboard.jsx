@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
 
-
 function CustomerDashboard({insideDashboard}) {
     
     const [weatherData, setWeatherData] = useState('');
@@ -40,18 +39,18 @@ function CustomerDashboard({insideDashboard}) {
     <>
     <Header insideDashboard/>
 
-    <div className="d-flex">
-    <div class="sidebar bg-primary border border-secondary p-4 shadow d-flex flex-column" style={{width:'7cm', height:'17.7cm'}}>
-        <Link to={'/customerdashboard'} class="text-decoration-none text-light mt-4 fs-5 fw-bolder ms-5">Home</Link>
-        <Link to={'/myprofile'} class="text-decoration-none text-light mt-4 fs-5 fw-bolder ms-5">My Profile</Link>
+    <div>
+    <div class="sidebar bg-primary border border-secondary shadow">
+        <Link to={'/customerdashboard'} id='a1' class="a text-decoration-none text-light fs-5 fw-bolder">Home</Link>
+        <Link to={'/myprofile'} class="a text-decoration-none text-light mt-4 fs-5 fw-bolder">My Profile</Link>
     </div>
 
     <Container>
-    <div className='py-4 px-3 pe-5 w-100'>
+    <div className='content' >
         <h1 className='fw-bolder'>Welcome {userName.username}!</h1>
         {
             weatherData && 
-            <div className='mt-4'>
+            <div>
               <div>
               <p className='fs-5'><b><i className="fa-solid fa-location-dot me-1"></i>Location:</b> {weatherData.name}</p>
             </div>

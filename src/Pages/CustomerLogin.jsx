@@ -68,11 +68,12 @@ function CustomerLogin({customerregister}) {
     <>
     <Header/>
     <div className='container p-5'>
-
     {/* Back to Home */}
-    <Link to={'/'} style={{textDecoration:'none'}}><i class="fa-solid fa-backward me-2"></i>Back to Home</Link>
+    <div className='mt-5 pt-5'>
+      <Link to={'/'} style={{textDecoration:'none'}}><i class="fa-solid fa-backward me-2"></i>Back to Home</Link>
+    </div>
 
-      <Row className='my-5'>
+      <Row className='mt-4'>
         <Col className='d-flex justify-content-center align-items-center'>
 
           {/* Card */}

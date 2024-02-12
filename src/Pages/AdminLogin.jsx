@@ -44,7 +44,11 @@ function AdminLogin() {
     <>
     <Header/>
     <div className='container p-5'>
-    <Link to={'/'} style={{textDecoration:'none'}}><i class="fa-solid fa-backward me-2"></i>Back to Home</Link>
+    {/* Back to Home */}
+    <div className='mt-5 pt-5'>
+      <Link to={'/'} style={{textDecoration:'none'}}><i class="fa-solid fa-backward me-2"></i>Back to Home</Link>
+    </div>
+
       <Row className='my-5'>
         <Col className='d-flex justify-content-center align-items-center'>
           <div className="card p-4 shadow">
@@ -67,6 +71,7 @@ function AdminLogin() {
           </div>
         </Col>
       </Row>
+      
     </div>
     </>
   )

@@ -31,15 +31,15 @@ function Header({insideLandingPage, insideDashboard, admindashboard}) {
 
   return (
     <>
-    <Navbar className="bg-warning py-3">
+    <Navbar className="bg-warning py-3" expand="lg" fixed="top">
           <Container>
 
           <Navbar.Brand href="/" className='fw-bolder text-primary fs-4'>
             <img
               alt=""
-              src="https://www.freeiconspng.com/thumbs/dashboard-icon/dashboard-icon-5.gif"
+              src="https://cdn-icons-png.flaticon.com/512/6820/6820955.png"
               width="50"
-              className="d-inline-block align-top rounded-pill me-2"
+              className="d-inline-block align-top me-2"
             />{' '}
             Dashboard
           </Navbar.Brand>
@@ -90,3 +90,7 @@ function Header({insideLandingPage, insideDashboard, admindashboard}) {
 }
 
 export default Header
+
+
+
+

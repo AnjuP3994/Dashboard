@@ -1,63 +1,54 @@
 
-#main{
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    position: fixed;
     height: 100%;
-    margin: auto;
-    padding: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-top: 10px;
-    border-radius: 20px;
-}
-.top-bar{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.top-bar input{
-    display: flex;
-    width: 500px;
-    border: none;
-    outline: none;
-}
-.top-bar button{
-    margin-left: -67px;
-    background-color: rgb(0, 75, 121);
-}
-.top-bar button:hover{
-    background-color: rgb(0, 75, 128);
-}
-.font{
-    font-family: 'Gabarito', sans-serif;
-}
-.font2{
-    font-family: 'Young Serif', serif;
-}
+    overflow: auto;
+  }
+  
+  .a {
+    display: block;
+    margin-left: 80px;
+  }
 
+  #a1{
+    padding-top: 150px;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 110px 0px;
+    height: 100%;
+  }
 
-@media(max-width:450px){
-    .body{
-        background: none;
+  @media screen and (max-width: 1480px) {
+    div.content {margin-left: 270px;}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
     }
-    .top-bar input{
-        background-color: rgba(76, 194, 241, 0.253);
+    .a {float: left; padding-bottom: 25px;}
+    #a1{padding-top: 100px;}
+    div.content {margin: 0; padding-top: 30px;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar{
+        padding-bottom: 25px;
     }
-    #main{
-        margin: 0%;
-        padding: 0%;
-        width: 100%;
+    .a {
+      text-align: center;
+      float: none;
+      padding: 0%;
+      margin: 0%;
     }
-}
-
-@media(max-width:1400px){
-    .body{
-        background: none;
+    #a1{
+        padding-top: 100px;
     }
-    .top-bar input{
-        background-color: rgba(76, 194, 241, 0.253);
-    }
-    #main{
-        margin: 0%;
-        padding: 0%;
-        width: 100%;
-    }
-}
+  }
